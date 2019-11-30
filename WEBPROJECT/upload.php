@@ -37,7 +37,7 @@ $db=new mysqli("localhost","root","","demisstify");
         }else{
            Echo '<p style="color:blue;font-size:25px;position:absolute;left:20%;top:42%;">successfully Registered Complaint.We will get to you as soon as we find the match </p>';
            echo '<p style="color:blue;font-size:25px;position:absolute;left:20%;top:47%;">Note the Complaint ID for future Reference ID:<b style="color:red">'. $ID.'</b></p>';
-         $command = 'C:\\Users\\Hemanth\\AppData\\Local\\Programs\\Python\\Python36\\python C:\\Users\\Hemanth\\Desktop\\python-compare-two-images\\compare.py '.$ID;
+         $command = 'python ..\\python-compare-two-images\\compare.py '.$ID;
             exec($command,$output,$retval);
           
              echo '<a href="index.php" style="color:RED;font-size:25px;position:absolute;left:20%;top:70%;">CONTINUE>></a>';         
